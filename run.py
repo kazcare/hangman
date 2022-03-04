@@ -10,7 +10,17 @@ word_list = [
     'jubilee',
     'success',
     'current',
-    'behaviour'
+    'behaviour',
+    'elephant',
+    'technology',
+    'energy',
+    'archeology',
+    'aeroplane',
+    'toucan',
+    'chemistry',
+    'biology',
+    'scorpion',
+    'physics'
 ]
 
 
@@ -120,8 +130,8 @@ def play(word):
                 print(f"\033[0;32mGood job, {guess} is in the word!")
                 guessed_letters.append(guess)
                 word_as_list = list(word_completion)
-                indices = [i for i, letter in enumerate(word) if letter == guess]
-                for index in indices:
+                ind = [i for i, letter in enumerate(word) if letter == guess]
+                for index in ind:
                     word_as_list[index] = guess
                 word_completion = "".join(word_as_list)
                 if "_" not in word_completion:
@@ -129,6 +139,8 @@ def play(word):
         else:
             print(f"\033[0;33mSORRY! {guess} is not a valid character")
         print(display_hangman(tries))
+        print(f"\033[0;31m{tries} attempts are remaining.")
+        print("\n")
         print(word_completion)
         print("\n")
     if guessed:
