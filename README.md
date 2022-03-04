@@ -96,6 +96,25 @@ Something about hangman game
 <a></a>
 ### **Deployment**
 
+he application has been deployed using Heroku by following these steps:
+
+Heroku was used to deploy the application.
+
+- Before we deploy application, you must commit changes and push them to GitHub.
+- Go to the <a href="https://www.heroku.com" target="_blank" rel="noopener">Heroku's website</a>.
+- Create an account or select log in if you have an account already.
+- From the Heroku dashboard, click on "Create new app".
+- Enter the "App name" and "Choose a region" before clicking on "Create app".
+- Go to "Config Vars" under the "Settings" tab.
+- Click on "Reveals Config Vars" and add the KEY: CREDS and the VALUE stored in creds.json file if needed.
+- Add the Config Var, KEY: PORT and VALUE: 8000.
+- Go to "Buildpacks" section and click "Add buildpack".
+- Select "python" and click "Save changes"
+- Add "nodejs" buildpack as well using the same process.
+- Go to "Deployment method", under the "Deploy" tab select "GitHub" and click on "Connect to GitHub".
+- Go to "Connect to GitHub" section and "Search" the repository to be deployed.
+- Click "Connect" next the repository name.
+- Choose "Automatic deploys" or "Manual deploys" to deploy your application.
 
     
 [Back to Top](#table-of-contents)
