@@ -174,9 +174,6 @@ I used Gitpod IDE to code my project.
         - Once these changes are added, a commit command to be entered by giving command 'git commit -m "message regarding changes made since last commit" '. 
         - After the commit command 'git push' command is to be entered to push all the chages to the deployed project.
 
- <img src="">
- <img src="">
-
 #### **Languages**
 
 - Python
