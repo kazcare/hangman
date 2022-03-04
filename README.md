@@ -3,13 +3,13 @@
 
 # **Hangman**
 
-<img src=""> (Am I Responsive image)
+<img src="docs/screens.png">
 
 Something about hangman game
 
 
 
-**GitHub repository** can be found by clicking <a href="https://github.com/kazcare/quizalanche" target="_blank" rel="noopener">**here**.</a> and the deployed **live link** for the website can be found by clicking <a href="https://kazcare.github.io/quizalanche/index.html" target="_blank" rel="noopener">**here**.</a>    
+**GitHub repository** can be found by clicking <a href="https://github.com/kazcare/hangman" target="_blank" rel="noopener">**here**.</a> and the deployed **live link** for the website can be found by clicking <a href="https://han-man.herokuapp.com/" target="_blank" rel="noopener">**here**.</a>    
 
 <a></a>
 
@@ -32,6 +32,7 @@ Something about hangman game
         * [Credits](#credits)
 
 <a></a>
+
 ## Flow Chart
 
 <img src="docs/flowchart.png">
@@ -40,6 +41,7 @@ Planning of this project was based on the flow charts using the platform Lucid C
 
 [Back to Top](#table-of-contents)
 <a></a>
+
 ## User experience
 ### Project Goals
 
@@ -50,6 +52,7 @@ Planning of this project was based on the flow charts using the platform Lucid C
 
 [Back to Top](#table-of-contents)
 <a></a>
+
 ### User Stories
 
 - As a player, I want the game to be user friendly.
@@ -60,6 +63,7 @@ Planning of this project was based on the flow charts using the platform Lucid C
 
 [Back to Top](#table-of-contents)
 <a></a>
+
 ### Coloured Text
 
 I used a simple colour scheme to improve the overall user experience and make it easy to understand color-coded messages.
@@ -70,22 +74,78 @@ I used a simple colour scheme to improve the overall user experience and make it
 
 [Back to Top](#table-of-contents)
 <a></a>
+
 ### Main Feature
+
+- **Title/ Welcome message**
+    - It contains title with welcome message
+
+<img src="docs/title.png">
+
+- **Start of the game**
+    - Game starts when the app loads
+    - Asks user to input any letter to guess the word
+    - It is colour coded in blue
+
+<img src="docs/start.png">
+
+- **Invalid Guess**
+    - It warns user if a non-alphabetic character is keyed in
+    - It is colour coded in yellow
+
+<img src="docs/invalid.png">
+
+- **Wrong Guess**
+    - It let's user know that the guessed letter is not in the word
+    - Hangman image shows the next stage and number of attempts remaining underneath it
+    - It is displayed in red colour
+
+<img src="docs/wrong.png">
+
+- **Correct guess**
+    - Informs user that the guessed letter is in the word
+    - It shows the letter on it's position in the word
+    - this message shows in green colour
+
+<img src="docs/correct.png">
+
+- **Win**
+    - When the whole word is guessed by the user, it congratulates the user on guessing the word
+    - It is green colour coded
+
+<img src="docs/win.png">
+
+- **Lose**
+    - If user is not succeful guessing the word after 6 wrong attemts, the game is over
+    - it tells user that it was not a successful attemp
+    - User get a message with the correct word and 
+    - User get message in red colour
+
+<img src="docs/lose.png">
+
+- **Play again**
+    - At the end of every game it asks user to play again.
+    - If user press y new game starts with a different word
+    - If user press n game ends
+    - It displays in blue
+
+<img src="docs/again.png">
 
 
 [Back to Top](#table-of-contents)
 <a></a>
+
 #### **Technology Used**
 
 - GitPod was used for writing code, committing, and then pushing to GitHub.
 - Github was used to store the project after pushing.
 - Lucid Charts was used to create and design the flow chart used in the logical design of this project.
-- Am I Responsive? was used in order to see responsive design throughout the process.
 - PEP8 online check was used to validate the python code.
 - Heroku was used to deploy the application.
 
 [Back to Top](#table-of-contents)
 <a></a>
+
 #### **Coding Environment**
 
 I used Gitpod IDE to code my project. 
@@ -116,41 +176,70 @@ I used Gitpod IDE to code my project.
 
  <img src="">
  <img src="">
+
 #### **Languages**
 
-
-
-[Back to Top](#table-of-contents)
-<a></a>
-### Testing
-
-
+- Python
 
 [Back to Top](#table-of-contents)
 <a></a>
+
+### **Testing**
+
+##### **Data Validation**
+    - Guessed letter is chacked to verify if it is alphabetic character
+    - None other characters are allowed to be used.
+<img src="docs/invalid.png">
+<img src="docs/invalid1.png">
+<img src="docs/invalid2.png">
+
+##### **Entry Validation**
+    - informs user if same letter is being guessed more than once
+
+<img src="docs/re-entry.png">
+
+##### **Empty Field Validation**
+    - It informs user if the nothing is entered by error
+    - It does not cost user any attemts
+
+<img src="docs/empty.png">
+
+##### **Progress Validation**
+    - Every incorrect guess decreases the number of attempts remaining
+    - It is shown with the complementing image
+<img src="docs/progress.png">
+
+##### **Replay Validation**
+    - It gives user an option to start the game again with newly selected word
+<img src="docs/again.png">
+
+[Back to Top](#table-of-contents)
+<a></a>
+
 #### **Validation Testing**
 
+##### **Final Validation Testing**
+
+<img src="docs/initial.png">
+
+##### **Final Validation Testing**
+
+<img src="docs/final.png">
+
+[Back to Top](#table-of-contents)
+<a></a>
+
+#### **Bugs**
+##### **Bugs Fixed**
+
+Game was only showing the image to let user know the progress.
+Added a message with number of attempts remaining.
 
 
 
 [Back to Top](#table-of-contents)
 <a></a>
-#### *Bugs*
 
-
-
-
-
-[Back to Top](#table-of-contents)
-<a></a>
-#### Bugs Fixed
-
-
-
-
-
-[Back to Top](#table-of-contents)
-<a></a>
 ### **Deployment**
 
 he application has been deployed using Heroku by following these steps:
@@ -176,8 +265,11 @@ Heroku was used to deploy the application.
     
 [Back to Top](#table-of-contents)
 <a></a>
+
 ### **Credits**
 
-
+- I would like to inform you all that this project (Hangman) is built for educational purpose only. I have rendered the following items and information from different resources. I would like to thank all of these resources for helping me completing my project.
+- <a href="https://www.w3schools.com//" target="_blank" rel="noopener">W3Schools</a> was used as a resource for solving syntax errors.
+- I referenced <a href="https://ozzmaker.com/add-colour-to-text-in-python/" target="_blank" rel="noopener">ozzmaker.com</a> and <a href="https://stackabuse.com/how-to-print-colored-text-in-python/" target="_blank" rel="noopener">stackabuse.com</a>
 
 [Back to Top](#table-of-contents)
