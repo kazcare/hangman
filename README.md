@@ -24,12 +24,12 @@ Something about hangman game
             * [Technology Used](#technology-used)
             * [Coding Environment](#coding-environment)
             * [Languages](#languages)
-        * [Testing](#testing)
-            * [Validation Testing](#validation-testing)
-            * [Bugs](#bugs)
-                * [Bugs Fixed](#bug-fixed)
-        * [Deployment](#deployment)
-        * [Credits](#credits)
+    * [Testing](#testing)
+        * [Validation Testing](#validation-testing)
+        * [Bugs](#bugs)
+            * [Bugs Fixed](#bug-fixed)
+    * [Deployment](#deployment)
+    * [Credits](#credits)
 
 <a></a>
 
@@ -181,53 +181,53 @@ I used Gitpod IDE to code my project.
 [Back to Top](#table-of-contents)
 <a></a>
 
-### **Testing**
+## Testing
 
-##### **Data Validation**
+#### **Data Validation**
     - Guessed letter is chacked to verify if it is alphabetic character
     - None other characters are allowed to be used.
 <img src="docs/invalid.png">
 <img src="docs/invalid1.png">
 <img src="docs/invalid2.png">
 
-##### **Entry Validation**
+#### **Entry Validation**
     - informs user if same letter is being guessed more than once
 
 <img src="docs/re-entry.png">
 
-##### **Empty Field Validation**
+#### **Empty Field Validation**
     - It informs user if the nothing is entered by error
     - It does not cost user any attemts
 
 <img src="docs/empty.png">
 
-##### **Progress Validation**
+#### **Progress Validation**
     - Every incorrect guess decreases the number of attempts remaining
     - It is shown with the complementing image
 <img src="docs/progress.png">
 
-##### **Replay Validation**
+#### **Replay Validation**
     - It gives user an option to start the game again with newly selected word
 <img src="docs/again.png">
 
 [Back to Top](#table-of-contents)
 <a></a>
 
-#### **Validation Testing**
+### **Validation Testing**
 
-##### **Final Validation Testing**
+#### **Initial Validation Testing**
 
 <img src="docs/initial.png">
 
-##### **Final Validation Testing**
+#### **Final Validation Testing**
 
 <img src="docs/final.png">
 
 [Back to Top](#table-of-contents)
 <a></a>
 
-#### **Bugs**
-##### **Bugs Fixed**
+### Bugs
+#### Bugs Fixed
 
 Game was only showing the image to let user know the progress.
 Added a message with number of attempts remaining.
@@ -237,7 +237,7 @@ Added a message with number of attempts remaining.
 [Back to Top](#table-of-contents)
 <a></a>
 
-### **Deployment**
+## Deployment
 
 he application has been deployed using Heroku by following these steps:
 
@@ -263,7 +263,7 @@ Heroku was used to deploy the application.
 [Back to Top](#table-of-contents)
 <a></a>
 
-### **Credits**
+## Credits
 
 - I would like to inform you all that this project (Hangman) is built for educational purpose only. I have rendered the following items and information from different resources. I would like to thank all of these resources for helping me completing my project.
 - <a href="https://www.w3schools.com//" target="_blank" rel="noopener">W3Schools</a> was used as a resource for solving syntax errors.
