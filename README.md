@@ -1,31 +1,107 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome USER_NAME,
+<a></a>
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+# **Hangman**
 
-## Reminders
+<img src=""> (Am I Responsive image)
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+Something about hangman game
 
-## Creating the Heroku app
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
 
-1. `heroku/python`
-2. `heroku/nodejs`
+**GitHub repository** can be found by clicking <a href="https://github.com/kazcare/quizalanche" target="_blank" rel="noopener">**here**.</a> and the deployed **live link** for the website can be found by clicking <a href="https://kazcare.github.io/quizalanche/index.html" target="_blank" rel="noopener">**here**.</a>    
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+<a></a>
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+## Table of contents 
+* [Hangman](#hangman)
+    * [Flow Chart](#flow-chart)
+    * [User Experience](#user-experience)
+        * [Project Goals](#project-goals)
+        * [User Stories](#user-stories)
+        * [Colored Text](#colored-text)
+        * [Main Features](#main-features)
+            * [Technology Used](#technology-used)
+            * [Languages](#languages)
+        * [Testing](#testing)
+            * [Validation Testing](#validation-testing)
+            * [Bugs](#bugs)
+                * [Bugs Fixed](#bug-fixed)
+        * [Deployment](#deployment)
+        * [Credits](#credits)
 
-Connect your GitHub repository and deploy as normal.
+<a></a>
+## Flow Chart
 
-## Constraints
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+[Back to Top](#table-of-contents)
+<a></a>
+## User experience
+### Project Goals
 
------
-Happy coding!
+
+[Back to Top](#table-of-contents)
+<a></a>
+### User Stories
+
+[Back to Top](#table-of-contents)
+<a></a>
+### Coloured Text
+
+[Back to Top](#table-of-contents)
+<a></a>
+### Main Feature
+
+
+[Back to Top](#table-of-contents)
+<a></a>
+#### **Technology Used**
+
+ <img src="">
+ <img src="">
+#### **Languages**
+
+
+
+[Back to Top](#table-of-contents)
+<a></a>
+### Testing
+
+
+
+[Back to Top](#table-of-contents)
+<a></a>
+#### **Validation Testing**
+
+
+
+
+[Back to Top](#table-of-contents)
+<a></a>
+#### *Bugs*
+
+
+
+
+
+[Back to Top](#table-of-contents)
+<a></a>
+#### Bugs Fixed
+
+
+
+
+
+[Back to Top](#table-of-contents)
+<a></a>
+### **Deployment**
+
+
+    
+[Back to Top](#table-of-contents)
+<a></a>
+### **Credits**
+
+
+
+[Back to Top](#table-of-contents)
