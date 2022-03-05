@@ -30,6 +30,11 @@ def welcome_user():
     user cannot user numbers
     username must have characters only
     """
+
+    print("\033[0;31m*****************************************************")
+    print("\033[1;33m            | H | A | N | G | M | A | N |           ")
+    print("\033[0;32m       Try to guess the word to win the game")
+    print("\033[0;31m*****************************************************")
     username = None
 
     while True:
@@ -122,11 +127,6 @@ def play(word):
     Loop to keep going until either the word is guessed
     or the attempts/ tries are expired
     """
-    print("\033[0;31m*****************************************************")
-    print("\033[1;33m            | H | A | N | G | M | A | N |           ")
-    print("\033[0;32m       Try to guess the word to win the game")
-    print("\033[0;31m*****************************************************")
-
     word_completion = "_" * len(word)
     guessed = False
     guessed_letters = []
