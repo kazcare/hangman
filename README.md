@@ -69,7 +69,9 @@ Planning of this project was based on the flow charts using the platform Lucid C
 
 - As a player, I want the game to be user friendly.
 - As a player, I want the game to be fun and engaging.
-- As a player, I want the game to show me progress in the game by showing hangman images
+- As a player, I want the game to ask user's name before start of the game.
+- As a player, I want the game to show me progress in the game by showing hangman images.
+- As a player, I want the game to show my progress by letting me know the number of attempts remaining.
 - As a player, after every game, I want app to give me option to either replay or end the game.
 - As a player, I want the game to give me warning if I accidently enter an invalid character and should not count it as an attempt/ try.
 
@@ -88,6 +90,12 @@ I used a simple colour scheme to improve the overall user experience and make it
 <a></a>
 
 ### Main Feature
+
+- **Username**
+    - In the start of the game it asks user to enter a name so user can be greeted by user's chosen name.
+
+<img src="docs/username1.png">
+<img src="docs/username2.png">
 
 - **Title/ Welcome message**
     - It contains title with welcome message
@@ -195,6 +203,11 @@ I used Gitpod IDE to code my project.
 
 ## Testing
 
+#### **Username Validation**
+    - Username is chacked if only the alphabets are entered. Numbers and other symbols are not allowed in the username field.
+    
+<img src="docs/username-validation.png">    
+
 #### **Data Validation**
     - Guessed letter is chacked to verify if it is alphabetic character
     - None other characters are allowed to be used.
@@ -203,19 +216,19 @@ I used Gitpod IDE to code my project.
 <img src="docs/invalid2.png">
 
 #### **Entry Validation**
-    - informs user if same letter is being guessed more than once
+    - informs user if same letter is being guessed in the previous attempts.
 
 <img src="docs/re-entry.png">
 
 #### **Empty Field Validation**
-    - It informs user if the nothing is entered by error
-    - It does not cost user any attemts
+    - It informs user if nothing is entered by error
+    - It does not cost user any attempts
 
 <img src="docs/empty.png">
 
 #### **Progress Validation**
     - Every incorrect guess decreases the number of attempts remaining
-    - It is shown with the complementing image
+    - It is shown with the next stage of Hangman image
 <img src="docs/progress.png">
 
 #### **Replay Validation**
