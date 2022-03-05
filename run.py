@@ -1,6 +1,6 @@
 import random
 
-word_list = [
+WORD_LIST = [
     'alarming',
     'engineer',
     'collect',
@@ -52,7 +52,7 @@ def get_word():
     """
     Get a random word from the list of words
     """
-    word = random.choice(word_list)
+    word = random.choice(WORD_LIST)
     return word.upper()
 
 
@@ -60,7 +60,7 @@ def display_hangman(tries):
     """
     Hangman images to show after every failed guess
     """
-    stages = [
+    STAGES = [
         """\033[0;31m
              ________
             |       |
@@ -118,10 +118,10 @@ def display_hangman(tries):
             |____________
             """
     ]
-    return stages[tries]
+    return STAGES[tries]
 
 
-def play(word):
+def play_game(word):
     """
     Play function
     Loop to keep going until either the word is guessed
@@ -177,10 +177,13 @@ def main():
     """
     welcome_user()
     word = get_word()
-    play(word)
-    while input("\033[0;34mPlay Again? (Y/N) ").upper() == "Y":
+    play_game(word)
+    while input("\033[0;34mPlay Again? (Y/N): ").upper() == "Y":
         word = get_word()
-        play(word)
+        play_game(word)
+    else:
+        print('Thank you for taking time to play Hangman.')
+
 
 
 if __name__ == "__main__":

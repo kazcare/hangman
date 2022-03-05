@@ -254,8 +254,7 @@ I used Gitpod IDE to code my project.
 ### Bugs
 #### Bugs Fixed
 
-Game was only showing the image to let user know the progress.
-Added a message with number of attempts remaining.
+Game was only showing the image to let user know the progress, which could be hard for some user to understand how many attempts were remaing. So added a message with number of attempts remaining.
 
 
 
