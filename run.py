@@ -24,6 +24,25 @@ word_list = [
 ]
 
 
+def welcome_user():
+    """
+    This function allows user to input their name.
+    user cannot user numbers
+    username must have characters only
+    """
+    username = None
+
+    while True:
+        username = input('\033[1;33m Enter your name: ')
+
+        if not username.isalpha():
+            print('Username must be alphabets only')
+            continue
+        else:
+            print(f"\033[1;33m welcome {username}")
+            break
+
+
 def get_word():
     """
     Get a random word from the list of words
@@ -156,6 +175,7 @@ def main():
     """
     Main function to call main functions
     """
+    welcome_user()
     word = get_word()
     play(word)
     while input("\033[0;34mPlay Again? (Y/N) ").upper() == "Y":

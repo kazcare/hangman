@@ -5,7 +5,19 @@
 
 <img src="docs/screens.png">
 
-Something about hangman game
+Hangman is an old school favorite, a word game where the goal is simply to find the missing word or words.
+
+You will be presented with a number of blank spaces representing the missing letters you need to find.
+
+Use the keyboard to guess a letter (I recommend starting with vowels).
+
+If your chosen letter exists in the answer, then all places in the answer where that letter appear will be revealed.
+
+After you've revealed several letters, you may be able to guess what the answer is and fill in the remaining letters.
+
+Be warned, every time you guess a letter wrong you loose a life and the hangman begins to appear, piece by piece.
+
+Solve the puzzle before the hangman dies.
 
 
 
@@ -267,6 +279,7 @@ Heroku was used to deploy the application.
 
 - I would like to inform you all that this project (Hangman) is built for educational purpose only. I have rendered the following items and information from different resources. I would like to thank all of these resources for helping me completing my project.
 - <a href="https://www.w3schools.com//" target="_blank" rel="noopener">W3Schools</a> was used as a resource for solving syntax errors.
-- I referenced <a href="https://ozzmaker.com/add-colour-to-text-in-python/" target="_blank" rel="noopener">ozzmaker.com</a> and <a href="https://stackabuse.com/how-to-print-colored-text-in-python/" target="_blank" rel="noopener">stackabuse.com</a>
+- I referenced <a href="https://ozzmaker.com/add-colour-to-text-in-python/" target="_blank" rel="noopener">ozzmaker.com</a> and <a href="https://stackabuse.com/how-to-print-colored-text-in-python/" target="_blank" rel="noopener">stackabuse.com</a> for using coloured text.
+- Copied some text from the <a href="https://thewordsearch.com/" target="_blank" rel="noopener">thewordsearch.com</a> to use in the README.md.
 
 [Back to Top](#table-of-contents)
