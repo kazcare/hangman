@@ -23,6 +23,12 @@ WORD_LIST = [
     'physics'
 ]
 
+AQUA_COLOR = '\033[96m'
+RED_COLOR = '\033[0;31m'
+YELLOW_COLOR = '\033[1;33m'
+GREEN_COLOR = '\033[0;32m'
+BLUE_COLOR = '\033[0;34m'
+
 
 def welcome_user():
     """
@@ -31,21 +37,32 @@ def welcome_user():
     username must have characters only
     """
 
-    print("\033[0;31m*****************************************************")
-    print("\033[1;33m            | H | A | N | G | M | A | N |           ")
-    print("\033[0;32m       Try to guess the word to win the game")
-    print("\033[0;31m*****************************************************")
+    print(AQUA_COLOR + '****************************************************')
+    print(YELLOW_COLOR + '            | H | A | N | G | M | A | N |           ')
+    print(GREEN_COLOR + '       Try to guess the word to win the game')
+    print(AQUA_COLOR + '****************************************************')
     username = None
 
     while True:
-        username = input('\033[1;33m Enter your name: ')
+        username = input(f'{YELLOW_COLOR}Enter your name: ')
 
         if not username.isalpha():
-            print('Username must be alphabets only')
+            print(f'{YELLOW_COLOR}Username must be alphabets only')
             continue
         else:
-            print(f"\033[1;33m welcome {username}")
+            print(f'{YELLOW_COLOR}welcome {username}')
             break
+    print(
+        "\n"
+        "\033[0;32mHow to Play: \n\n"
+        "The aim is to make the correct word by guessing "
+        "the letters one at a time. \n\n"
+        "1. To guess, type a letter of your choice and hit enter. \n"
+        "2. If you are right the letter will appear on screen. \n"
+        "3. If you are wrong the hangman will start to appear. \n"
+        "4. You have 6 attempts to guess correctly or Game Over!! \n"
+        "5. If you have any issues please hit the Run Program Button!!\n"
+    )
 
 
 def get_word():
@@ -56,12 +73,12 @@ def get_word():
     return word.upper()
 
 
-def display_hangman(tries):
+def display_hangman(attempts):
     """
     Hangman images to show after every failed guess
     """
     STAGES = [
-        """\033[0;31m
+        RED_COLOR + """
              ________
             |       |
             |       O
@@ -69,7 +86,7 @@ def display_hangman(tries):
             |      / \\
             |____________
             """,
-        """\033[0;31m
+        RED_COLOR + """
              ________
             |       |
             |       O
@@ -77,7 +94,7 @@ def display_hangman(tries):
             |      /
             |____________
             """,
-        """\033[0;31m
+        RED_COLOR + """
              ________
             |       |
             |       O
@@ -85,7 +102,7 @@ def display_hangman(tries):
             |
             |____________
             """,
-        """\033[0;31m
+        RED_COLOR + """
              ________
             |       |
             |       O
@@ -93,7 +110,7 @@ def display_hangman(tries):
             |
             |____________
             """,
-        """\033[0;31m
+        RED_COLOR + """
              ________
             |       |
             |       O
@@ -101,7 +118,7 @@ def display_hangman(tries):
             |
             |____________
             """,
-        """\033[0;31m
+        RED_COLOR + """
              ________
             |       |
             |       O
@@ -109,7 +126,7 @@ def display_hangman(tries):
             |
             |____________
             """,
-        """\033[0;31m
+        RED_COLOR + """
              ________
             |       |
             |
@@ -118,7 +135,7 @@ def display_hangman(tries):
             |____________
             """
     ]
-    return STAGES[tries]
+    return STAGES[attempts]
 
 
 def play_game(word):
@@ -130,23 +147,23 @@ def play_game(word):
     word_completion = "_" * len(word)
     guessed = False
     guessed_letters = []
-    tries = 6
+    tries_remaining = 6
 
-    print("\033[0;36mLet's play Hangman!")
-    print(display_hangman(tries))
+    print(f"{YELLOW_COLOR}Let's play Hangman!")
+    print(display_hangman(tries_remaining))
     print(word_completion)
-    print("\n")
-    while not guessed and tries > 0:
-        guess = input("\033[0;34mPlease guess a letter: ").upper()
+    print('\n')
+    while not guessed and tries_remaining > 0:
+        guess = input(f'{BLUE_COLOR} Please guess a letter: ').upper()
         if len(guess) == 1 and guess.isalpha():
             if guess in guessed_letters:
-                print(f"\033[0;33mYou already guessed the letter, {guess}")
+                print(f'{YELLOW_COLOR}You already guessed the letter {guess}')
             elif guess not in word:
-                print(f"\033[0;31mSorry! {guess} is not in the word.")
-                tries -= 1
+                print(f'{RED_COLOR}Sorry! {guess} is not in the word.')
+                tries_remaining -= 1
                 guessed_letters.append(guess)
             else:
-                print(f"\033[0;32mGood job, {guess} is in the word!")
+                print(f'{GREEN_COLOR}Good job, {guess} is in the word!')
                 guessed_letters.append(guess)
                 word_as_list = list(word_completion)
                 ind = [i for i, letter in enumerate(word) if letter == guess]
@@ -156,19 +173,19 @@ def play_game(word):
                 if "_" not in word_completion:
                     guessed = True
         else:
-            print(f"\033[0;33mSORRY! {guess} is not a valid character")
-        print(display_hangman(tries))
-        print(f"\033[0;31m{tries} attempts are remaining.")
-        print("\n")
+            print(f'{YELLOW_COLOR}SORRY! {guess} is not a valid character')
+        print(display_hangman(tries_remaining))
+        print(f'{RED_COLOR}{tries_remaining} attempts are remaining.')
+        print('\n')
         print(word_completion)
-        print("\n")
+        print('\n')
     if guessed:
-        print("\033[0;32m\n|W|E| |H|A|V|E| |A| |W|I|N|N|E|R|")
-        print(f"Congratulations! You have guessed the word: {word}.\n")
+        print(f'{GREEN_COLOR}\n|W|E| |H|A|V|E| |A| |W|I|N|N|E|R|')
+        print(f'{GREEN_COLOR}Congratulations! You have guessed the word: {word}.\n')
     else:
-        print("\033[0;31m\n | S | O | R | R | Y |")
-        print(f"The word was {word}. You didn't win it this time.")
-        print("\033[0;31mTry Again!\n")
+        print(f'{RED_COLOR}\n | S | O | R | R | Y |')
+        print(f'{RED_COLOR}The word was {word}. You didn"t win it this time.')
+        print(f'{RED_COLOR}Try Again!\n')
 
 
 def main():
@@ -178,12 +195,11 @@ def main():
     welcome_user()
     word = get_word()
     play_game(word)
-    while input("\033[0;34mPlay Again? (Y/N): ").upper() == "Y":
+    while input(f'{BLUE_COLOR}Play Again? (Y/N): ').upper() == "Y":
         word = get_word()
         play_game(word)
     else:
         print('Thank you for taking time to play Hangman.')
-
 
 
 if __name__ == "__main__":
