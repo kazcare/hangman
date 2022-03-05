@@ -38,7 +38,7 @@ def welcome_user():
     """
 
     print(AQUA_COLOR + '****************************************************')
-    print(YELLOW_COLOR + '            | H | A | N | G | M | A | N |           ')
+    print(YELLOW_COLOR + '           | H | A | N | G | M | A | N |          ')
     print(GREEN_COLOR + '       Try to guess the word to win the game')
     print(AQUA_COLOR + '****************************************************')
     username = None
@@ -53,15 +53,15 @@ def welcome_user():
             print(f'{YELLOW_COLOR}welcome {username}')
             break
     print(
-        "\n"
-        "\033[0;32mHow to Play: \n\n"
-        "The aim is to make the correct word by guessing "
-        "the letters one at a time. \n\n"
-        "1. To guess, type a letter of your choice and hit enter. \n"
-        "2. If you are right the letter will appear on screen. \n"
-        "3. If you are wrong the hangman will start to appear. \n"
-        "4. You have 6 attempts to guess correctly or Game Over!! \n"
-        "5. If you have any issues please hit the Run Program Button!!\n"
+        '\n'
+        f'{GREEN_COLOR}How to Play: \n\n'
+        f'The aim is to make the correct word by guessing '
+        'the letters one at a time. \n\n'
+        f'1. To guess, type a letter of your choice and hit enter.\n'
+        f'2. If you are right the letter will appear on screen.\n'
+        f'3. If you are wrong the hangman will start to appear.\n'
+        f'4. You have 6 attempts to guess correctly or Game Over!!\n'
+        f'5. If you have any issues please hit the Run Program Button!!\n'
     )
 
 
@@ -181,7 +181,7 @@ def play_game(word):
         print('\n')
     if guessed:
         print(f'{GREEN_COLOR}\n|W|E| |H|A|V|E| |A| |W|I|N|N|E|R|')
-        print(f'{GREEN_COLOR}Congratulations! You have guessed the word: {word}.\n')
+        print(f'{GREEN_COLOR}You have guessed the word: {word}.\n')
     else:
         print(f'{RED_COLOR}\n | S | O | R | R | Y |')
         print(f'{RED_COLOR}The word was {word}. You didn"t win it this time.')
