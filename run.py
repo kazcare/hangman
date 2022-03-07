@@ -1,27 +1,5 @@
 import random
-
-WORD_LIST = [
-    'alarming',
-    'engineer',
-    'collect',
-    'confirmation',
-    'greeting',
-    'mechanic',
-    'jubilee',
-    'success',
-    'current',
-    'behaviour',
-    'elephant',
-    'technology',
-    'energy',
-    'archeology',
-    'aeroplane',
-    'toucan',
-    'chemistry',
-    'biology',
-    'scorpion',
-    'physics'
-]
+from word import WORD_LIST
 
 AQUA_COLOR = '\033[96m'
 RED_COLOR = '\033[0;31m'
