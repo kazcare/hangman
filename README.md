@@ -34,12 +34,12 @@ Solve the puzzle before the hangman dies.
         * [Colored Text](#colored-text)
         * [Main Features](#main-features)
             * [Technology Used](#technology-used)
-            * [Coding Environment](#coding-environment)
             * [Languages](#languages)
     * [Testing](#testing)
         * [Validation Testing](#validation-testing)
         * [Bugs](#bugs)
             * [Bugs Fixed](#bug-fixed)
+    * [Coding Environment](#coding-environment)
     * [Deployment](#deployment)
     * [Credits](#credits)
 
@@ -163,37 +163,6 @@ I used a simple colour scheme to improve the overall user experience and make it
 - PEP8 online check was used to validate the python code.
 - Heroku was used to deploy the application.
 
-[Back to Top](#table-of-contents)
-<a></a>
-
-#### **Coding Environment**
-
-I used Gitpod IDE to code my project. 
-
-* Following procedures are to be followed to get to the Gitpod IDE.
-
-    1. Firstly you need to login to your GitHub account.
-
-    2. Create a new repository by clicking green "New" button on the right hand side.
-
-    3. Once the repository is created, click the repository to open it.
-
-    4. Once it is opened, click the green "Gitpod" button on the right hand side to create a Gitpod workspace. It takes some time to create it.
-        
-* Note: Once the Gitpod workspace is created for certain repository, do not click the green Gitpod button again, as it will create another workspace for the same repository. Everytime after the Gitpod workspace is created, access it by clicking <a href="https://gitpod.io/workspaces" target="_blank" rel="noopener">gitpod.io/workspaces</a>.
-
-    5. In the Gitpod IDE there are three main sections: 
-        - On the left hand side there is an explorer that shows the list of the files and folders in the project. 
-        - The right hand side is divided into two portions vertically. 
-        - Bigger portion on the top is for write codes and the bottom is to write commands for the Gitpod IDE.
-
-    6. Every change made to the any file and folder in the project has to be sent to GitHub, otherwise the deployed project will not show those changes.
-
-    7. To send the changes to GitHub following three steps to be followed:
-        - First, changes are to be added by giving command 'git add filename' or use 'git add .' for adding all the changes to more than one item in the project. 
-        - Once these changes are added, a commit command to be entered by giving command 'git commit -m "message regarding changes made since last commit" '. 
-        - After the commit command 'git push' command is to be entered to push all the chages to the deployed project.
-
 #### **Languages**
 
 - Python
@@ -256,7 +225,36 @@ I used Gitpod IDE to code my project.
 
 Game was only showing the image to let user know the progress, which could be hard for some user to understand how many attempts were remaing. So added a message with number of attempts remaining.
 
+[Back to Top](#table-of-contents)
+<a></a>
 
+## Coding Environment
+
+I used Gitpod IDE to code my project. 
+
+* Following procedures are to be followed to get to the Gitpod IDE.
+
+    1. Firstly you need to login to your GitHub account.
+
+    2. Create a new repository by clicking green "New" button on the right hand side.
+
+    3. Once the repository is created, click the repository to open it.
+
+    4. Once it is opened, click the green "Gitpod" button on the right hand side to create a Gitpod workspace. It takes some time to create it.
+        
+* Note: Once the Gitpod workspace is created for certain repository, do not click the green Gitpod button again, as it will create another workspace for the same repository. Everytime after the Gitpod workspace is created, access it by clicking <a href="https://gitpod.io/workspaces" target="_blank" rel="noopener">gitpod.io/workspaces</a>.
+
+    5. In the Gitpod IDE there are three main sections: 
+        - On the left hand side there is an explorer that shows the list of the files and folders in the project. 
+        - The right hand side is divided into two portions vertically. 
+        - Bigger portion on the top is for write codes and the bottom is to write commands for the Gitpod IDE.
+
+    6. Every change made to the any file and folder in the project has to be sent to GitHub, otherwise the deployed project will not show those changes.
+
+    7. To send the changes to GitHub following three steps to be followed:
+        - First, changes are to be added by giving command 'git add filename' or use 'git add .' for adding all the changes to more than one item in the project. 
+        - Once these changes are added, a commit command to be entered by giving command 'git commit -m "message regarding changes made since last commit" '. 
+        - After the commit command 'git push' command is to be entered to push all the chages to the deployed project.
 
 [Back to Top](#table-of-contents)
 <a></a>

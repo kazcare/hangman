@@ -3,9 +3,10 @@ from word import WORD_LIST
 
 AQUA_COLOR = '\033[96m'
 RED_COLOR = '\033[0;31m'
-YELLOW_COLOR = '\033[1;33m'
 GREEN_COLOR = '\033[0;32m'
 BLUE_COLOR = '\033[0;34m'
+YELLOW_COLOR = '\033[0;33m'
+YELLOW_HEADING = '\033[1;33m'
 
 
 def welcome_user():
@@ -16,7 +17,7 @@ def welcome_user():
     """
 
     print(AQUA_COLOR + '****************************************************')
-    print(YELLOW_COLOR + '           | H | A | N | G | M | A | N |          ')
+    print(YELLOW_HEADING + '           | H | A | N | G | M | A | N |          ')
     print(GREEN_COLOR + '       Try to guess the word to win the game')
     print(AQUA_COLOR + '****************************************************')
     username = None
@@ -32,14 +33,14 @@ def welcome_user():
             break
     print(
         '\n'
-        f'{GREEN_COLOR}How to Play: \n\n'
+        f'{GREEN_COLOR}Instructions: \n\n'
         f'The aim is to make the correct word by guessing '
         'the letters one at a time. \n\n'
         f'1. To guess, type a letter of your choice and hit enter.\n'
         f'2. If you are right the letter will appear on screen.\n'
         f'3. If you are wrong the hangman will start to appear.\n'
         f'4. You have 6 attempts to guess correctly or Game Over!!\n'
-        f'5. If you have any issues please hit the Run Program Button!!\n'
+        f'5. If you have any issues please press the Run Program Button!!\n'
     )
 
 
