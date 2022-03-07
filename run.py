@@ -166,6 +166,16 @@ def play_game(word):
         print(f'{RED_COLOR}Try Again!\n')
 
 
+def play_again():
+    """
+    It gives user option to either replay the game or quit playing it
+    """
+    while input(f'{BLUE_COLOR}Play Again? (Y/N): ').upper() == "Y":
+        word = get_word()
+        play_game(word)
+    print('Thank you for taking time to play Hangman.')
+
+
 def main():
     """
     Main function to call main functions
@@ -173,12 +183,7 @@ def main():
     welcome_user()
     word = get_word()
     play_game(word)
-    while input(f'{BLUE_COLOR}Play Again? (Y/N): ').upper() == "Y":
-        word = get_word()
-        play_game(word)
-    else:
-        print('Thank you for taking time to play Hangman.')
-
+    play_again()
 
 if __name__ == "__main__":
     main()
