@@ -17,7 +17,7 @@ def welcome_user():
     """
 
     print(AQUA_COLOR + '****************************************************')
-    print(YELLOW_HEADING + '           | H | A | N | G | M | A | N |          ')
+    print(YELLOW_HEADING + '           | H | A | N | G | M | A | N |         ')
     print(GREEN_COLOR + '       Try to guess the word to win the game')
     print(AQUA_COLOR + '****************************************************')
     username = None
@@ -121,7 +121,7 @@ def play_game(word):
     """
     Play function
     Loop to keep going until either the word is guessed
-    or the attempts/ tries are expired
+    or the tries_remaining are expired
     """
     word_completion = "_" * len(word)
     guessed = False
@@ -163,7 +163,7 @@ def play_game(word):
         print(f'{GREEN_COLOR}You have guessed the word: {word}.\n')
     else:
         print(f'{RED_COLOR}\n | S | O | R | R | Y |')
-        print(f'{RED_COLOR}The word was {word}. You didn"t win it this time.')
+        print(f"{RED_COLOR}The word was {word}. You didn't win it this time.")
         print(f'{RED_COLOR}Try Again!\n')
 
 

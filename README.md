@@ -1,11 +1,10 @@
-
 <a></a>
 
 # **Hangman**
 
 <img src="docs/screens.png">
 
-Hangman is an old school favorite, a word game where the goal is simply to find the missing word or words.
+Hangman is an old school favorite, a word game where the goal is simply to find the missing word.
 
 You will be presented with a number of blank spaces representing the missing letters you need to find.
 
@@ -15,7 +14,7 @@ If your chosen letter exists in the answer, then all places in the answer where 
 
 After you've revealed several letters, you may be able to guess what the answer is and fill in the remaining letters.
 
-Be warned, every time you guess a letter wrong you loose a life and the hangman begins to appear, piece by piece.
+Be warned, every time you guess a letter wrong you loose a life and the hangman begins to appear, piece by piece. There are 6 body parts to apprear before yo run out of chances.
 
 Solve the puzzle before the hangman dies.
 
@@ -91,19 +90,23 @@ I used a simple colour scheme to improve the overall user experience and make it
 
 ### Main Feature
 
-- **Username**
-    - In the start of the game it asks user to enter a name so user can be greeted by user's chosen name.
-
-<img src="docs/username1.png">
-<img src="docs/username2.png">
-
 - **Title/ Welcome message**
     - It contains title with welcome message
 
 <img src="docs/title.png">
 
+- **Username**
+    - In the start of the game it asks user to enter a name so user can be greeted by user's chosen name. Name has to be entered in alphabetic notation.
+
+<img src="docs/username.png">
+
+- **Instructions**
+    - After validating the name, game displays the instructions to play the gaem.
+
+<img src="docs/instructions.png">
+
 - **Start of the game**
-    - Game starts when the app loads
+    - Game loads under the instructions
     - Asks user to input any letter to guess the word
     - It is colour coded in blue
 
@@ -151,6 +154,11 @@ I used a simple colour scheme to improve the overall user experience and make it
 
 <img src="docs/again.png">
 
+- **Thank user**
+    - At the end if user decides not to play anymore, game thanks user for playing the game
+
+<img src="docs/thank.png">
+
 
 [Back to Top](#table-of-contents)
 <a></a>
@@ -180,7 +188,7 @@ I used a simple colour scheme to improve the overall user experience and make it
 #### **Data Validation**
     - Guessed letter is chacked to verify if it is alphabetic character
     - None other characters are allowed to be used.
-<img src="docs/invalid.png">
+
 <img src="docs/invalid1.png">
 <img src="docs/invalid2.png">
 
@@ -204,6 +212,10 @@ I used a simple colour scheme to improve the overall user experience and make it
     - It gives user an option to start the game again with newly selected word
 <img src="docs/again.png">
 
+#### **Thank user validation**
+    - It thanks user after user decides to leave the game by not replaying it.
+<img src="docs/thank.png">
+
 [Back to Top](#table-of-contents)
 <a></a>
 
@@ -223,7 +235,15 @@ I used a simple colour scheme to improve the overall user experience and make it
 ### Bugs
 #### Bugs Fixed
 
-Game was only showing the image to let user know the progress, which could be hard for some user to understand how many attempts were remaing. So added a message with number of attempts remaining.
+1- Game was only showing the image to let user know the progress, which could be hard for some user to understand how many attempts were remaing. 
+- Added a message with number of attempts remaining.
+
+2- When game ask user to replay, if user piced 'Y' to replay it would start game again but if user pick 'N' for not to replay, it didn't do anything. It was a confusing. 
+- Now a message appears thanking user to taking time to play the game.
+
+3- Sigle quotes are used for print commands.
+- Had to use double quote for the following command, as "didn't" wouldn't work with single quotes.
+- print(f"{RED_COLOR}The word was {word}. You didn't win it this time.")
 
 [Back to Top](#table-of-contents)
 <a></a>
