@@ -14,7 +14,7 @@ If your chosen letter exists in the answer, then all places in the answer where 
 
 After you've revealed several letters, you may be able to guess what the answer is and fill in the remaining letters.
 
-Be warned, every time you guess a letter wrong you loose a life and the hangman begins to appear, piece by piece. There are 6 body parts to apprear before yo run out of chances.
+Be warned, every time you guess a letter wrong you lose a life and the hangman begins to appear, piece by piece. There are 6 body parts to apprear before you run out of chances.
 
 Solve the puzzle before the hangman dies.
 
@@ -96,12 +96,12 @@ I used a simple colour scheme to improve the overall user experience and make it
 <img src="docs/title.png">
 
 - **Username**
-    - In the start of the game it asks user to enter a name so user can be greeted by user's chosen name. Name has to be entered in alphabetic notation.
+    - In the start of the game it asks user to enter a name so user can be greeted by user's chosen name. Name has to be entered in alphabetic notation
 
 <img src="docs/username.png">
 
 - **Instructions**
-    - After validating the name, game displays the instructions to play the gaem.
+    - After validating the name, game displays the instructions to play the game.
 
 <img src="docs/instructions.png">
 
@@ -119,7 +119,7 @@ I used a simple colour scheme to improve the overall user experience and make it
 <img src="docs/invalid.png">
 
 - **Wrong Guess**
-    - It let's user know that the guessed letter is not in the word
+    - It lets user know that the guessed letter is not in the word
     - Hangman image shows the next stage and number of attempts remaining underneath it
     - It is displayed in red colour
 
@@ -139,15 +139,15 @@ I used a simple colour scheme to improve the overall user experience and make it
 <img src="docs/win.png">
 
 - **Lose**
-    - If user is not succeful guessing the word after 6 wrong attemts, the game is over
-    - it tells user that it was not a successful attemp
-    - User get a message with the correct word and 
+    - If user is not successful guessing the word after 6 wrong attempts, the game is over
+    - It tells user that it was not a successful attempt
+    - User get a message with the correct word
     - User get message in red colour
 
 <img src="docs/lose.png">
 
 - **Play again**
-    - At the end of every game it asks user to play again.
+    - At the end of every game it asks user to play again
     - If user press y new game starts with a different word
     - If user press n game ends
     - It displays in blue
@@ -181,13 +181,13 @@ I used a simple colour scheme to improve the overall user experience and make it
 ## Testing
 
 #### **Username Validation**
-    - Username is chacked if only the alphabets are entered. Numbers and other symbols are not allowed in the username field.
+    - Username is checked if only the alphabets are entered. Numbers and other symbols are not allowed in the username field.
     
 <img src="docs/username-validation.png">    
 
 #### **Data Validation**
-    - Guessed letter is chacked to verify if it is alphabetic character
-    - None other characters are allowed to be used.
+    - Guessed letter is checked to verify if it is alphabetic character.
+    - None other characters are allowed.
 
 <img src="docs/invalid1.png">
 <img src="docs/invalid2.png">
@@ -198,8 +198,8 @@ I used a simple colour scheme to improve the overall user experience and make it
 <img src="docs/re-entry.png">
 
 #### **Empty Field Validation**
-    - It informs user if nothing is entered by error
-    - It does not cost user any attempts
+    - It informs user if nothing is entered by error.
+    - It does not cost user any attempts.
 
 <img src="docs/empty.png">
 
@@ -238,10 +238,10 @@ I used a simple colour scheme to improve the overall user experience and make it
 1- Game was only showing the image to let user know the progress, which could be hard for some user to understand how many attempts were remaing. 
 - Added a message with number of attempts remaining.
 
-2- When game ask user to replay, if user piced 'Y' to replay it would start game again but if user pick 'N' for not to replay, it didn't do anything. It was a confusing. 
+2- When game ask user to replay, if user presses 'Y' to replay it would start game again but if user picks 'N' for not to replay, it didn't do anything. It was confusing. 
 - Now a message appears thanking user to taking time to play the game.
 
-3- Sigle quotes are used for print commands.
+3- Single quotes are used for print commands.
 - Had to use double quote for the following command, as "didn't" wouldn't work with single quotes.
 - print(f"{RED_COLOR}The word was {word}. You didn't win it this time.")
 
@@ -260,7 +260,7 @@ I used Gitpod IDE to code my project.
 
     3. Once the repository is created, click the repository to open it.
 
-    4. Once it is opened, click the green "Gitpod" button on the right hand side to create a Gitpod workspace. It takes some time to create it.
+    4. Once it is opened, click the green "Gitpod" button on the top right hand side to create a Gitpod workspace. It takes some time to create it.
         
 * Note: Once the Gitpod workspace is created for certain repository, do not click the green Gitpod button again, as it will create another workspace for the same repository. Everytime after the Gitpod workspace is created, access it by clicking <a href="https://gitpod.io/workspaces" target="_blank" rel="noopener">gitpod.io/workspaces</a>.
 
@@ -281,11 +281,11 @@ I used Gitpod IDE to code my project.
 
 ## Deployment
 
-he application has been deployed using Heroku by following these steps:
+This application has been deployed using Heroku by following these steps:
 
 Heroku was used to deploy the application.
 
-- Before we deploy application, you must commit changes and push them to GitHub.
+- Before the application deployed, you must commit changes and push them to GitHub.
 - Go to the <a href="https://www.heroku.com" target="_blank" rel="noopener">Heroku's website</a>.
 - Create an account or select log in if you have an account already.
 - From the Heroku dashboard, click on "Create new app".

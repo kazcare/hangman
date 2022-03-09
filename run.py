@@ -23,13 +23,13 @@ def welcome_user():
     username = None
 
     while True:
-        username = input(f'{YELLOW_COLOR}Enter your name: ')
+        username = input(f'{YELLOW_COLOR} Enter your name: ')
 
         if not username.isalpha():
-            print(f'{YELLOW_COLOR}Username must be alphabets only')
+            print(f'{YELLOW_COLOR} Username must be alphabets only')
             continue
         else:
-            print(f'{YELLOW_COLOR}welcome {username}')
+            print(f'{YELLOW_COLOR} welcome {username}')
             break
     print(
         '\n'
@@ -133,7 +133,7 @@ def play_game(word):
     print(word_completion)
     print('\n')
     while not guessed and tries_remaining > 0:
-        guess = input(f'{BLUE_COLOR} Please guess a letter: ').upper()
+        guess = input(f'{BLUE_COLOR}Please guess a letter: ').upper()
         if len(guess) == 1 and guess.isalpha():
             if guess in guessed_letters:
                 print(f'{YELLOW_COLOR}You already guessed the letter {guess}')
@@ -154,15 +154,15 @@ def play_game(word):
         else:
             print(f'{YELLOW_COLOR}SORRY! {guess} is not a valid character')
         print(display_hangman(tries_remaining))
-        print(f'{RED_COLOR}{tries_remaining} attempts are remaining.')
+        print(f'{RED_COLOR} {tries_remaining} attempts are remaining.')
         print('\n')
         print(word_completion)
         print('\n')
     if guessed:
-        print(f'{GREEN_COLOR}\n|W|E| |H|A|V|E| |A| |W|I|N|N|E|R|')
+        print(f'{GREEN_COLOR}\n |W|E| |H|A|V|E| |A| |W|I|N|N|E|R|')
         print(f'{GREEN_COLOR}You have guessed the word: {word}.\n')
     else:
-        print(f'{RED_COLOR}\n | S | O | R | R | Y |')
+        print(f'{RED_COLOR}\n| S | O | R | R | Y |')
         print(f"{RED_COLOR}The word was {word}. You didn't win it this time.")
         print(f'{RED_COLOR}Try Again!\n')
 
