@@ -18,7 +18,9 @@ Be warned, every time you guess a letter wrong you lose a life and the hangman b
 
 Solve the puzzle before the hangman dies.
 
+It has 2 python files, run.py and word.py. 
 
+run.py has the all the functionality code for the game and word.py has a list of words, from which a random word is chosen by computer.
 
 **GitHub repository** can be found by clicking <a href="https://github.com/kazcare/hangman" target="_blank" rel="noopener">**here**.</a> and the deployed **live link** for the website can be found by clicking <a href="https://han-man.herokuapp.com/" target="_blank" rel="noopener">**here**.</a>    
 
@@ -57,7 +59,7 @@ Planning of this project was based on the flow charts using the platform Lucid C
 ### Project Goals
 
 - It should give user an option to retry after every game
-- It should clearly shows user his/ her progress throwout the game
+- It should clearly shows user's progress throwout the game with different images and number of attempts left.
 - It should validate the user entry, it should only be a single alphabetic character.
 
 
@@ -66,13 +68,12 @@ Planning of this project was based on the flow charts using the platform Lucid C
 
 ### User Stories
 
-- As a player, I want the game to be user friendly.
-- As a player, I want the game to be fun and engaging.
 - As a player, I want the game to ask user's name before start of the game.
+- As a player, I want the game to show me instructions at the start of the game.
 - As a player, I want the game to show me progress in the game by showing hangman images.
 - As a player, I want the game to show my progress by letting me know the number of attempts remaining.
 - As a player, after every game, I want app to give me option to either replay or end the game.
-- As a player, I want the game to give me warning if I accidently enter an invalid character and should not count it as an attempt/ try.
+- As a player, I want the game to give me warning if I accidently enter an invalid character and should not count it as an attempt to guess the word.
 
 [Back to Top](#table-of-contents)
 <a></a>
@@ -308,6 +309,7 @@ Heroku was used to deploy the application.
 ## Credits
 
 - I would like to inform you all that this project (Hangman) is built for educational purpose only. I have rendered the following items and information from different resources. I would like to thank all of these resources for helping me completing my project.
+- Idea and main coding skeleton was inspired by <a href="https://www.youtube.com/watch?v=m4nEnsavl6w" target="_blank" rel="noopener"> Kite </a>Developement Community Youtube video.
 - <a href="https://www.w3schools.com//" target="_blank" rel="noopener">W3Schools</a> was used as a resource for solving syntax errors.
 - I referenced <a href="https://ozzmaker.com/add-colour-to-text-in-python/" target="_blank" rel="noopener">ozzmaker.com</a> and <a href="https://stackabuse.com/how-to-print-colored-text-in-python/" target="_blank" rel="noopener">stackabuse.com</a> for using coloured text.
 - Copied some text from the <a href="https://thewordsearch.com/" target="_blank" rel="noopener">thewordsearch.com</a> to use in the README.md.
